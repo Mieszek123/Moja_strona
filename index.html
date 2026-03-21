@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mieszek.dev</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="p-0 bg-white">
+
+  <!-- Navbar -->
+  <nav class="flex items-center px-6 py-6 justify-between md:px-20 md:py-10">
+    <a class="font-extrabold text-xl md:text-2xl">Mieszek.dev</a>
+
+    <!-- menu desktop -->
+    <div class="hidden md:flex gap-5 font-medium">
+      <a href="#projekty" class="relative text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">
+        Projekty
+      </a>
+      <a href="#o-mnie" class="relative text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">
+        O mnie
+      </a>
+      <a href="#kontakt" class="relative text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">
+        Kontakt
+      </a>
+    </div>
+
+    <!-- hamburger mobile -->
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar1"></span>
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar2"></span>
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar3"></span>
+    </button>
+  </nav>
+
+  <!-- menu mobilne rozwijane -->
+  <div id="mobile-menu" class="hidden flex-col gap-4 px-6 pb-6 md:hidden">
+    <a href="#projekty" class="text-sm text-black hover:text-fuchsia-500 transition-colors">Projekty</a>
+    <a href="#o-mnie" class="text-sm text-black hover:text-fuchsia-500 transition-colors">O mnie</a>
+    <a href="#kontakt" class="text-sm text-black hover:text-fuchsia-500 transition-colors">Kontakt</a>
+  </div>
+
+  <!-- Hero -->
+  <section  class="relative flex flex-col md:flex-row items-center px-6 py-12 md:px-20 md:py-10 w-full min-h-[90vh] gap-12 overflow-hidden">
+
+      <!-- kulki w tle -->
+    <div class=" z-0 absolute bottom-[-150px] left-[-100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
+
+
+    <!-- lewy -->
+    <div class="w-full md:w-[40%] md:shrink-0 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-semibold leading-tight">
+        Tworzę nowoczesne<br>strony <span class="text-fuchsia-500 text-5xl md:text-6xl">WWW</span>
+      </h1>
+      <p class="my-5 text-gray-500 text-sm leading-relaxed">
+        Tworzę strony internetowe dla firm z całej Polski, które są responsywne, nowoczesne i dobrze zoptymalizowane pod kątem SEO.
+      </p>
+      <div class="flex gap-4 justify-center md:justify-start">
+        <button class="bg-fuchsia-600 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors w-50">
+          Projekty
+        </button>
+        <button class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
+          Kontakt
+        </button>
+      </div>
+    </div>
+
+    <!-- prawy -->
+    <div class="w-full md:flex-1 flex items-center justify-center md:justify-end">
+      <div class=" z-10 w-72 rounded-xl overflow-hidden sm:mr-20">
+
+        <!-- pasek górny -->
+        <div class="flex items-center gap-1.5 px-3.5 py-2.5 bg-zinc-100">
+          <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+          <span class="mx-auto text-xs text-zinc-400 font-mono">index.html</span>
+        </div>
+
+        <!-- paski kodu -->
+        <div class="bg-[#1e1e2e] p-5 flex flex-col gap-2.5" id="code-body">
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
+            <div class="h-2 rounded-full bg-[#cdd6f4] w-[38px]"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[24px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="w-[14px] shrink-0"></div>
+            <div class="h-2 rounded-full bg-[#cba6f7] w-[36px]"></div>
+            <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="w-[14px] shrink-0"></div>
+            <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
+            <div class="h-2 rounded-full bg-[#cdd6f4] w-[28px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="w-[28px] shrink-0"></div>
+            <div class="h-2 rounded-full bg-[#cba6f7] w-[28px]"></div>
+            <div class="h-2 rounded-full bg-[#a6e3a1] w-[72px]"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="w-[28px] shrink-0"></div>
+            <div class="h-2 rounded-full bg-[#89b4fa] w-[32px]"></div>
+            <div class="h-2 rounded-full bg-[#cdd6f4] w-[50px]"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="w-[14px] shrink-0"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
+            <div class="h-2 rounded-full bg-[#cdd6f4] w-[40px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
+            <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
+          </div>
+          <div class="code-row flex items-center gap-2.5 opacity-0">
+            <div class="h-2 w-1.5 rounded-sm bg-[#cdd6f4] animate-[blink_1s_infinite]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    // animacja kodu
+    const rows = document.querySelectorAll('.code-row');
+    let i = 0;
+    function next() {
+      if (i >= rows.length) return;
+      rows[i].style.opacity = '1';
+      rows[i].style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      rows[i].style.transform = 'translateX(0)';
+      i++;
+      setTimeout(next, 180);
+    }
+    setTimeout(next, 400);
+
+    // hamburger
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let open = false;
+
+    btn.addEventListener('click', () => {
+      open = !open;
+      if (open) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+        bar1.style.transform = 'translateY(8px) rotate(45deg)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        bar1.style.transform = '';
+        bar2.style.opacity = '1';
+        bar3.style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
