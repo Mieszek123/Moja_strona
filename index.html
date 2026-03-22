@@ -189,12 +189,12 @@
 
   <!--Responsywnosc-->
   <section class=" relative py-16 px-6 md:px-20">
-    <div class="z-0 absolute top-[300px] left-[300px] w-[500px] h-[500px] rounded-full bg-fuchsia-400 opacity-20 blur-3xl pointer-events-none"></div>
+    <div class="z-0 absolute top-[300px] left-[100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
     <div class="max-w-3xl mx-auto">
 
       <!-- Nagłówek -->
        <div class="flex items-center justify-center mb-4 gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
         </svg>
         <h2 class="text-3xl font-semibold text-center ">Responsywność</h2>
@@ -293,6 +293,98 @@
     </div>
   </section>
 
+  <!--styl-->
+  <section class="relative py-16 px-6 md:px-20">
+    <div class="z-0 absolute top-[200px] right-[100px] w-[500px] h-[500px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
+ 
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+ 
+      <!-- lewo: okienko -->
+      <div class="w-full md:w-1/2">
+        <div id="stylWindow" class="relative z-10 rounded-2xl border border-zinc-200 bg-white shadow-sm overflow-hidden transition-all duration-300">
+ 
+          <!-- Pasek tytułowy -->
+          <div id="stylBar" class="flex items-center gap-2 px-4 py-3 bg-zinc-50 border-b border-zinc-200 transition-all duration-300">
+            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+            <span class="w-3 h-3 rounded-full bg-green-400"></span>
+            <span id="stylBarTitle" class="ml-2 text-xs text-zinc-400 select-none">twoja-strona.pl</span>
+          </div>
+ 
+          <!-- Treść -->
+          <div id="stylContent" class="p-6 transition-all duration-300">
+ 
+            <!-- Nav -->
+            <div class="flex items-center justify-between mb-5 pb-4 border-b border-zinc-100" id="stylNavBorder">
+              <span id="stylLogo" class="text-sm font-bold text-zinc-800">MojaFirma</span>
+              <div class="flex gap-3">
+                <span id="stylNav1" class="text-xs text-zinc-400">Oferta</span>
+                <span id="stylNav2" class="text-xs text-zinc-400">O nas</span>
+                <span id="stylNav3" class="text-xs text-zinc-400">Kontakt</span>
+              </div>
+            </div>
+ 
+            <!-- Hero -->
+            <div class="mb-5">
+              <div id="stylTag" class="inline-block text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 mb-3">Witaj na stronie</div>
+              <h3 id="stylH" class="text-lg font-semibold text-zinc-800 mb-2 leading-snug">Profesjonalne usługi<br>dla Twojej firmy</h3>
+              <p id="stylP" class="text-xs text-zinc-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+ 
+            <!-- Button -->
+            <div id="stylBtn" class="inline-block px-4 py-2 rounded-lg bg-zinc-800 text-white text-xs font-medium transition-all duration-300">
+              Dowiedz się więcej
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+ 
+      <!-- prawo: tekst + badge'e -->
+      <div class="w-full md:w-1/2 text-center md:text-left">
+ 
+        <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-fuchsia-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+          </svg>
+          <h2 class="text-3xl font-semibold">Styl</h2>
+        </div>
+ 
+        <p class="text-gray-500 mb-4">
+          Każda strona, którą tworzę, jest unikalna i dopasowana do charakteru firmy oraz oczekiwań klienta.
+        </p>
+        <p class="text-gray-400 text-sm mb-8">Kliknij styl, żeby zobaczyć jak zmienia się wygląd strony.</p>
+ 
+        <!-- Badge'e -->
+        <div class="flex gap-3 items-center justify-center md:justify-start">
+ 
+          <button onclick="setStyle('nowoczesny')" id="btn-nowoczesny" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-fuchsia-400 bg-white shadow-sm transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+            </svg>
+            <span class="text-xs md:text-sm font-medium text-zinc-700">Nowoczesny</span>
+          </button>
+ 
+          <button onclick="setStyle('stylowy')" id="btn-stylowy" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-zinc-200 bg-white shadow-sm transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
+            </svg>
+            <span class="text-xs md:text-sm font-medium text-zinc-700">Stylowy</span>
+          </button>
+ 
+          <button onclick="setStyle('profesjonalny')" id="btn-profesjonalny" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-zinc-200 bg-white shadow-sm transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+            </svg>
+            <span class="text-xs md:text-sm font-medium text-zinc-700">Profesjonalny</span>
+          </button>
+ 
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+
 
   <script>
     // animacja kodu
@@ -352,17 +444,79 @@
       wVal.textContent = wSlider.value + 'px';
     });
 
-  initSlider();
-  window.addEventListener('resize', initSlider);
+    initSlider();
+    window.addEventListener('resize', initSlider);
 
+    // animacja fade-up
+    const fadeEls = document.querySelectorAll('.fade-up');
+    fadeEls.forEach((el, idx) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, 100 + idx * 150);
+    });
 
-  // animacja fade-up
-  const fadeEls = document.querySelectorAll('.fade-up');
-  fadeEls.forEach((el, i) => {
-    setTimeout(() => {
-      el.classList.add('visible');
-    }, 100 + i * 150);
-  });
+    // zmiana stylu mockupa
+    const styles = {
+      nowoczesny: {
+        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-zinc-900 border-zinc-700',
+        barTitle: 'ml-2 text-xs select-none text-zinc-500',
+        content: 'p-6 transition-all duration-300 bg-white',
+        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-zinc-100',
+        logo: 'text-sm font-black tracking-tight text-zinc-900',
+        nav: 'text-xs text-zinc-400',
+        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-fuchsia-100 text-fuchsia-600',
+        h: 'text-lg mb-2 leading-snug font-bold text-zinc-900',
+        p: 'text-xs leading-relaxed text-zinc-400',
+        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-fuchsia-600 text-white rounded-full',
+      },
+      stylowy: {
+        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-[#1a0a2e] border-purple-900',
+        barTitle: 'ml-2 text-xs select-none text-purple-400',
+        content: 'p-6 transition-all duration-300 bg-[#0f0720]',
+        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-purple-900',
+        logo: 'text-xs font-black tracking-widest uppercase text-purple-300',
+        nav: 'text-xs text-purple-500',
+        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-purple-900 text-purple-300',
+        h: 'text-lg mb-2 leading-snug font-bold text-white',
+        p: 'text-xs leading-relaxed text-purple-300',
+        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white rounded-xl',
+      },
+      profesjonalny: {
+        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-slate-100 border-slate-200',
+        barTitle: 'ml-2 text-xs select-none text-slate-400',
+        content: 'p-6 transition-all duration-300 bg-white',
+        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-slate-100',
+        logo: 'text-sm font-semibold tracking-wide text-slate-800',
+        nav: 'text-xs text-slate-500',
+        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-blue-50 text-blue-600',
+        h: 'text-lg mb-2 leading-snug font-semibold text-slate-800',
+        p: 'text-xs leading-relaxed text-slate-400',
+        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-blue-700 text-white rounded-md',
+      },
+    };
+
+    function setStyle(name) {
+      const s = styles[name];
+      document.getElementById('stylBar').className = s.bar;
+      document.getElementById('stylBarTitle').className = s.barTitle;
+      document.getElementById('stylContent').className = s.content;
+      document.getElementById('stylNavBorder').className = s.navBorder;
+      document.getElementById('stylLogo').className = s.logo;
+      ['stylNav1', 'stylNav2', 'stylNav3'].forEach(id => {
+        document.getElementById(id).className = s.nav;
+      });
+      document.getElementById('stylTag').className = s.tag;
+      document.getElementById('stylH').className = s.h;
+      document.getElementById('stylP').className = s.p;
+      document.getElementById('stylBtn').className = s.btn;
+
+      document.querySelectorAll('.style-btn').forEach(b => {
+        b.classList.remove('border-fuchsia-400');
+        b.classList.add('border-zinc-200');
+      });
+      document.getElementById('btn-' + name).classList.remove('border-zinc-200');
+      document.getElementById('btn-' + name).classList.add('border-fuchsia-400');
+    }
 
   </script>
 
