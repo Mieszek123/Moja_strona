@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source inline("grid-cols-4 sm:grid-cols-4 bg-blue-100 border-fuchsia-400");
 
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(14px); }
