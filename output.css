@@ -286,17 +286,29 @@
   .top-\[300px\] {
     top: 300px;
   }
+  .right-\[50\] {
+    right: 50;
+  }
+  .right-\[50vw\] {
+    right: 50vw;
+  }
   .right-\[70px\] {
     right: 70px;
   }
   .right-\[100px\] {
     right: 100px;
   }
+  .right-\[200px\] {
+    right: 200px;
+  }
   .bottom-\[100px\] {
     bottom: 100px;
   }
   .left-\[-100px\] {
     left: -100px;
+  }
+  .left-\[10px\] {
+    left: 10px;
   }
   .left-\[100px\] {
     left: 100px;
@@ -652,6 +664,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -1319,9 +1334,19 @@
       line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
+  .md\:z-0 {
+    @media (width >= 48rem) {
+      z-index: 0;
+    }
+  }
   .md\:mx-0 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:flex {
@@ -1477,6 +1502,16 @@
     @media (width >= 48rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .lg\:z-0 {
+    @media (width >= 64rem) {
+      z-index: 0;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .\32 xl\:mx-auto {
