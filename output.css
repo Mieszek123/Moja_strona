@@ -33,6 +33,7 @@
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-indigo-800: oklch(39.8% 0.195 277.366);
     --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-fuchsia-50: oklch(97.7% 0.017 320.058);
     --color-fuchsia-100: oklch(95.2% 0.037 318.852);
     --color-fuchsia-200: oklch(90.3% 0.076 319.62);
     --color-fuchsia-400: oklch(74% 0.238 322.16);
@@ -58,6 +59,7 @@
     --color-zinc-200: oklch(92% 0.004 286.32);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
     --color-zinc-500: oklch(55.2% 0.016 285.938);
+    --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-700: oklch(37% 0.013 285.805);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-zinc-900: oklch(21% 0.006 285.885);
@@ -777,6 +779,9 @@
   .bg-emerald-100 {
     background-color: var(--color-emerald-100);
   }
+  .bg-fuchsia-50 {
+    background-color: var(--color-fuchsia-50);
+  }
   .bg-fuchsia-100 {
     background-color: var(--color-fuchsia-100);
   }
@@ -840,6 +845,9 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -857,6 +865,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -1082,6 +1093,9 @@
   .text-zinc-500 {
     color: var(--color-zinc-500);
   }
+  .text-zinc-600 {
+    color: var(--color-zinc-600);
+  }
   .text-zinc-700 {
     color: var(--color-zinc-700);
   }
@@ -1130,9 +1144,17 @@
     --tw-duration: 150ms;
     transition-duration: 150ms;
   }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .duration-350 {
+    --tw-duration: 350ms;
+    transition-duration: 350ms;
   }
   .select-none {
     -webkit-user-select: none;
@@ -1237,6 +1259,16 @@
   .sm\:mr-20 {
     @media (width >= 40rem) {
       margin-right: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .sm\:h-5 {
