@@ -1352,6 +1352,11 @@
       font-size: 25px;
     }
   }
+  .md\:text-\[30px\] {
+    @media (width >= 48rem) {
+      font-size: 30px;
+    }
+  }
   .md\:text-\[40px\] {
     @media (width >= 48rem) {
       font-size: 40px;
