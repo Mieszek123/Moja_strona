@@ -7,7 +7,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
-  src: url('/Moja_strona/fonts/outfit-v15-latin-regular.woff2') format('woff2');
+  src: url('fonts/outfit-v15-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
-  src: url('/Moja_strona/fonts/outfit-v15-latin-600.woff2') format('woff2');
+  src: url('fonts/outfit-v15-latin-600.woff2') format('woff2');
 }
 
 /* syne */
@@ -24,7 +24,7 @@
   font-family: 'Syne';
   font-style: normal;
   font-weight: 400;
-  src: url('/Moja_strona/fonts/syne-v24-latin-regular.woff2') format('woff2');
+  src: url('fonts/syne-v24-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -32,7 +32,7 @@
   font-family: 'Syne';
   font-style: normal;
   font-weight: 700;
-  src: url('/Moja_strona/fonts/syne-v24-latin-700.woff2') format('woff2');
+  src: url('fonts/syne-v24-latin-700.woff2') format('woff2');
 }
 
 /* inter */
@@ -41,7 +41,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url('/Moja_strona/fonts/inter-v20-latin-regular.woff2') format('woff2');
+  src: url('fonts/inter-v20-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('/Moja_strona/fonts/inter-v20-latin-500.woff2') format('woff2');
+  src: url('fonts/inter-v20-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -57,7 +57,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url('/Moja_strona/fonts/inter-v20-latin-600.woff2') format('woff2');
+  src: url('fonts/inter-v20-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -65,7 +65,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('/Moja_strona/fonts/inter-v20-latin-700.woff2') format('woff2');
+  src: url('fonts/inter-v20-latin-700.woff2') format('woff2');
 }
 
 @keyframes fadeUp {
