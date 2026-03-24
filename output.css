@@ -315,6 +315,15 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mr-0\.5 {
+    margin-right: calc(var(--spacing) * 0.5);
+  }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -810,6 +819,12 @@
   .text-left {
     text-align: left;
   }
+  .font-\[Inter\] {
+    font-family: Inter;
+  }
+  .font-\[Outfit\] {
+    font-family: Outfit;
+  }
   .font-mono {
     font-family: var(--font-mono);
   }
@@ -851,6 +866,12 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -913,6 +934,12 @@
   }
   .text-emerald-800 {
     color: var(--color-emerald-800);
+  }
+  .text-fuchsia-100 {
+    color: var(--color-fuchsia-100);
+  }
+  .text-fuchsia-300 {
+    color: var(--color-fuchsia-300);
   }
   .text-fuchsia-400 {
     color: var(--color-fuchsia-400);
@@ -1323,6 +1350,11 @@
   .md\:text-\[25px\] {
     @media (width >= 48rem) {
       font-size: 25px;
+    }
+  }
+  .md\:text-\[40px\] {
+    @media (width >= 48rem) {
+      font-size: 40px;
     }
   }
   .lg\:block {
