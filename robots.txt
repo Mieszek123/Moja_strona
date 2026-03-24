@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mieszek.dev/sitemap.xml

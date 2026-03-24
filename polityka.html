@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polityka prywatności | Mieszek.dev</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="output.css">
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { opacity: 0; }
+    .fade-up.show { animation: fadeUp 0.55s ease forwards; }
+
+    .policy-ol { list-style: none; padding-left: 0; counter-reset: main-c; }
+    .policy-ol > li { counter-increment: main-c; position: relative; padding-left: 1.6rem; }
+    .policy-ol > li::before {
+      content: counter(main-c) ".";
+      position: absolute; left: 0; top: 0;
+      font-weight: 700; color: #e879f9; font-size: 0.8rem;
+    }
+    .policy-sub-ol { list-style: none; padding-left: 0; counter-reset: sub-c; margin-top: 0.4rem; }
+    .policy-sub-ol > li { counter-increment: sub-c; position: relative; padding-left: 1.5rem; }
+    .policy-sub-ol > li::before {
+      content: counter(sub-c, lower-alpha) ".";
+      position: absolute; left: 0;
+      font-weight: 600; color: #d946ef; font-size: 0.8rem;
+    }
+    .policy-ul { list-style: none; padding-left: 0; margin-top: 0.4rem; }
+    .policy-ul > li { position: relative; padding-left: 1.1rem; }
+    .policy-ul > li::before {
+      content: '–';
+      position: absolute; left: 0;
+      color: #e879f9; font-weight: 700;
+    }
+  </style>
+</head>
+<body class="p-0 bg-white overflow-x-hidden font-inter">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center px-6 py-6 justify-between md:px-20 md:py-10">
+    <a href="index.html" class="font-[Outfit] font-semibold text-2xl md:text-[30px]">
+      <span class="font-[Inter] font-extrabold text-fuchsia-400 text-3xl md:text-[40px] mr-0.5">M</span>ieszek.dev
+    </a>
+
+    <!-- menu desktop -->
+    <div class="hidden md:flex gap-5 font-medium">
+      <a href="index.html#projekty" class="relative text-md text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">Projekty</a>
+      <a href="index.html#o-mnie" class="relative text-md text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">O mnie</a>
+      <a href="index.html#kontakt" class="relative text-md text-black hover:text-fuchsia-500 transition-colors duration-300
+        after:absolute after:bottom-0 after:left-0
+        after:h-px after:w-0 after:bg-fuchsia-500
+        after:transition-all after:duration-300
+        hover:after:w-full">Kontakt</a>
+    </div>
+
+    <!-- hamburger mobile -->
+    <button aria-label="Otwórz menu" id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar1"></span>
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar2"></span>
+      <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar3"></span>
+    </button>
+  </nav>
+
+  <!-- menu mobilne -->
+  <div id="mobile-menu" class="hidden flex-col gap-4 px-6 pb-6 md:hidden">
+    <a href="index.html#projekty" class="text-sm text-black hover:text-fuchsia-500 transition-colors">Projekty</a>
+    <a href="index.html#o-mnie"   class="text-sm text-black hover:text-fuchsia-500 transition-colors">O mnie</a>
+    <a href="index.html#kontakt"  class="text-sm text-black hover:text-fuchsia-500 transition-colors">Kontakt</a>
+  </div>
+
+  <!-- HERO -->
+  <main>
+    <section class="justify-center items-center relative px-6 py-12 md:px-20 md:py-16 overflow-hidden">
+      <h1 class="text-center fade-up font-[Outfit] text-4xl md:text-5xl font-semibold leading-tight relative z-10">
+        Polityka <span class="text-fuchsia-400 text-5xl md:text-6xl">prywatności</span>
+      </h1>
+      <p class="mx-auto text-center fade-up mt-4 text-gray-500 text-sm leading-relaxed max-w-lg relative z-10">
+        Informacje o tym, jak gromadzimy, przetwarzamy i chronimy Twoje dane osobowe.
+      </p>
+    </section>
+
+    <!-- TREŚĆ -->
+    <div class="max-w-3xl mx-auto px-6 md:px-10 pb-20 flex flex-col gap-5">
+
+      <!-- 1 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">1</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Informacje ogólne</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <strong class="text-zinc-800 font-semibold">mieszek.dev</strong></li>
+            <li>Operatorem serwisu oraz Administratorem danych osobowych jest: Mieszko Nowacki, Irlandzka 88A/2</li>
+            <li>Adres kontaktowy poczty elektronicznej operatora: <strong class="text-zinc-800 font-semibold">mnowacki.kontakt@outlook.com</strong></li>
+            <li>Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.</li>
+            <li>Serwis wykorzystuje dane osobowe w następujących celach:
+              <ul class="policy-ul flex flex-col gap-1 text-zinc-500">
+                <li>Obsługa zapytań przez formularz</li>
+                <li>Prezentacja oferty lub informacji</li>
+              </ul>
+            </li>
+            <li>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
+              <ol class="policy-sub-ol flex flex-col gap-1 text-zinc-500">
+                <li>Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora.</li>
+                <li>Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka").</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">2</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Wybrane metody ochrony danych stosowane przez Operatora</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.</li>
+            <li>Operator okresowo zmienia swoje hasła administracyjne.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">3</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Hosting</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Serwis jest hostowany (technicznie utrzymywany) na serwerze operatora: <strong class="text-zinc-800 font-semibold">cyberFolks.pl</strong></li>
+            <li>Firma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać:
+              <ul class="policy-ul flex flex-col gap-1 text-zinc-500">
+                <li>zasoby określone identyfikatorem URL (adresy żądanych zasobów – stron, plików),</li>
+                <li>czas nadejścia zapytania,</li>
+                <li>czas wysłania odpowiedzi,</li>
+                <li>nazwę stacji klienta – identyfikacja realizowana przez protokół HTTP,</li>
+                <li>informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP,</li>
+                <li>adres URL strony poprzednio odwiedzanej przez użytkownika (referer link) – w przypadku gdy przejście do Serwisu nastąpiło przez odnośnik,</li>
+                <li>informacje o przeglądarce użytkownika,</li>
+                <li>informacje o adresie IP,</li>
+                <li>informacje diagnostyczne związane z procesem samodzielnego zamawiania usług poprzez rejestratory na stronie,</li>
+                <li>informacje związane z obsługą poczty elektronicznej kierowanej do Operatora oraz wysyłanej przez Operatora.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">4</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców jak: upoważnieni pracownicy i współpracownicy Administratora, podmioty świadczące usługi hostingu.</li>
+            <li>Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata.</li>
+            <li>Przysługuje Ci prawo żądania od Administratora:
+              <ul class="policy-ul flex flex-col gap-1 text-zinc-500">
+                <li>dostępu do danych osobowych Ciebie dotyczących,</li>
+                <li>ich sprostowania,</li>
+                <li>usunięcia,</li>
+                <li>ograniczenia przetwarzania,</li>
+                <li>oraz przenoszenia danych.</li>
+              </ul>
+            </li>
+            <li>Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania wskazanego w art. 21 RODO danych osobowych w celu wykonania prawnie uzasadnionych interesów realizowanych przez Administratora.</li>
+            <li>W przypadku, gdy przetwarzanie danych osobowych odbywa się na podstawie zgody osoby na przetwarzanie danych osobowych (art. 6 ust. 1 lit. a RODO), przysługuje Ci prawo do cofnięcia tej zgody w dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem.</li>
+            <li>Skargę na działania Administratora można wnieść do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.</li>
+            <li>Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi zapytania przez Serwis.</li>
+            <li>W stosunku do Ciebie mogą być podejmowane czynności polegające na zautomatyzowanym podejmowaniu decyzji, w tym profilowaniu, w celu świadczenia usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora marketingu bezpośredniego.</li>
+            <li>Dane osobowe nie są przekazywane od krajów trzecich w rozumieniu przepisów o ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii Europejskiej.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">5</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Informacje w formularzach</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.</li>
+            <li>Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, adres IP).</li>
+            <li>Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz adresu url strony zawierającej formularz.</li>
+            <li>Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo kontekst i opis formularza w czytelny sposób informuje, do czego on służy.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">6</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Logi Administratora</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Informacje o zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">7</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Istotne techniki marketingowe</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Operator stosuje analizę statystyczną ruchu na stronie, poprzez Google Analytics (Google Inc. z siedzibą w USA). Operator nie przekazuje do operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika. W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć reklamową Google użytkownik może przeglądać i edytować informacje wynikające z plików cookies przy pomocy narzędzia:
+              <a href="https://www.google.com/ads/preferences/" target="_blank" rel="noopener"
+                 class="text-fuchsia-500 hover:underline break-all">https://www.google.com/ads/preferences/</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">8</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Informacja o plikach cookies</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Serwis korzysta z plików cookies.</li>
+            <li>Pliki cookies (tzw. „ciasteczka") stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</li>
+            <li>Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.</li>
+            <li>Pliki cookies wykorzystywane są w następujących celach:
+              <ul class="policy-ul flex flex-col gap-1 text-zinc-500">
+                <li>realizacji celów określonych powyżej w części „Istotne techniki marketingowe".</li>
+              </ul>
+            </li>
+            <li>W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: „sesyjne" (session cookies) oraz „stałe" (persistent cookies). Cookies „sesyjne" są plikami tymczasowymi, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe" pliki cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika.</li>
+            <li>Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany ustawień w tym zakresie. Przeglądarka internetowa umożliwia usunięcie plików cookies. Możliwe jest także automatyczne blokowanie plików cookies. Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja przeglądarki internetowej.</li>
+            <li>Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisu.</li>
+            <li>Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu wykorzystywane mogą być również przez współpracujące z operatorem Serwisu podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w USA), Facebook (Meta Platforms, Inc. z siedzibą w USA).</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="fade-up rounded-2xl border border-zinc-100 overflow-hidden shadow-sm hover:shadow-fuchsia-100 hover:shadow-md transition-shadow duration-300">
+        <div class="flex items-center gap-3 px-5 py-4 bg-white border-b border-zinc-100">
+          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-fuchsia-400 text-white text-xs font-bold shrink-0">9</span>
+          <h2 class="font-[Outfit] font-semibold text-base text-zinc-800">Zarządzanie plikami cookies</h2>
+        </div>
+        <div class="bg-zinc-50 px-5 py-5">
+          <ol class="policy-ol flex flex-col gap-2 text-sm text-zinc-600 leading-relaxed">
+            <li>Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić, a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www.</li>
+            <li>W celu zarządzania ustawieniami cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami:
+              <ul class="policy-ul flex flex-col gap-1">
+                <li><a href="https://support.microsoft.com/pl-pl/microsoft-edge" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Edge</a></li>
+                <li><a href="https://support.microsoft.com/pl-pl/windows/usuwanie-i-zarz%C4%85dzanie-plikami-cookie" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Internet Explorer</a></li>
+                <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Chrome</a></li>
+                <li><a href="https://support.apple.com/pl-pl/guide/safari/sfri11471/mac" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Safari</a></li>
+                <li><a href="https://support.mozilla.org/pl/kb/usuwanie-ciasteczek" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Firefox</a></li>
+                <li><a href="https://help.opera.com/pl/latest/web-preferences/" target="_blank" rel="noopener" class="text-fuchsia-500 hover:underline">Opera</a></li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- WAVE -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+    class="block w-full h-[100px] mb-[-2px]"
+  >
+    <path fill="#FAE8FF" fill-opacity="1"
+      d="M0,192L60,170.7C120,149,240,107,360,117.3C480,128,600,192,720,202.7C840,213,960,171,1080,176C1200,181,1320,235,1380,261.3L1440,288L1440,320L0,320Z">
+    </path>
+  </svg>
+
+  <!-- FOOTER -->
+  <footer class="bg-fuchsia-100">
+    <div class="flex flex-col md:flex-row md:justify-between w-11/12 md:w-4/5 mx-auto gap-6 md:gap-0 py-6">
+
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <a href="index.html" class="text-black font-extrabold text-xl sm:text-2xl md:text-3xl">Mieszek.dev</a>
+        <a target="_blank" href="https://github.com/Mieszek123"
+          class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-black text-white text-xs sm:text-sm
+                 hover:bg-fuchsia-500 transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          Github
+        </a>
+      </div>
+
+      <div class="flex flex-col justify-center items-center sm:flex-row md:items-center gap-3 sm:gap-6">
+        <a href="index.html#projekty" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+          after:absolute after:bottom-0 after:left-0
+          after:h-px after:w-0 after:bg-fuchsia-500
+          after:transition-all after:duration-300
+          hover:after:w-full">Projekty</a>
+        <a href="index.html#o-mnie" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+          after:absolute after:bottom-0 after:left-0
+          after:h-px after:w-0 after:bg-fuchsia-500
+          after:transition-all after:duration-300
+          hover:after:w-full">O mnie</a>
+        <a href="index.html#kontakt" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+          after:absolute after:bottom-0 after:left-0
+          after:h-px after:w-0 after:bg-fuchsia-500
+          after:transition-all after:duration-300
+          hover:after:w-full">Kontakt</a>
+        <a href="polityka-prywatnosci.html" class="relative text-xs sm:text-sm text-fuchsia-500 font-medium
+          after:absolute after:bottom-0 after:left-0
+          after:h-px after:w-full after:bg-fuchsia-500">Polityka prywatności</a>
+      </div>
+    </div>
+
+    <div class="pb-4">
+      <p class="text-center text-zinc-500 text-[10px] sm:text-xs">
+        &copy; 2026 Mieszek.dev. Wszelkie prawa zastrzeżone.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // hamburger
+    const btn  = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let open = false;
+
+    btn.addEventListener('click', () => {
+      open = !open;
+      if (open) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex');
+        bar1.style.transform = 'translateY(8px) rotate(45deg)';
+        bar2.style.opacity   = '0';
+        bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex');
+        bar1.style.transform = '';
+        bar2.style.opacity   = '1';
+        bar3.style.transform = '';
+      }
+    });
+
+    // scroll fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
