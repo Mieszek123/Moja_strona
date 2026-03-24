@@ -3,761 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strony internetowe | Mieszek.dev</title>
-  <meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe
-   dla firm z całej Polski. Każda strona jest szybka,
-   zoptymalizowana pod SEO i dopasowana do charakteru Twojej firmy.
-   Sprawdź moje projekty i skontaktuj się ze mną!">
-  <link rel="canonical" href="https://mieszek123.github.io/Moja_strona/">
-  <meta property="og:title" content="Mieszek.dev – Strony internetowe dla firm">
-  <meta property="og:description" content="Tworzę nowoczesne, responsywne strony WWW dla firm z całej Polski.">
-  <meta property="og:url" content="https://mieszek123.github.io/Moja_strona/">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="output.css">
+  <title>Mieszek.dev – Już wkrótce</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap');
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #e4e4f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    .bg-blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      opacity: 0.15;
+    }
+    .bg-blob-1 {
+      width: 500px; height: 500px;
+      background: #c084fc;
+      top: -100px; left: -150px;
+    }
+    .bg-blob-2 {
+      width: 400px; height: 400px;
+      background: #7c3aed;
+      bottom: -100px; right: -100px;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .logo {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: #c084fc;
+      font-size: 2.4rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #c084fc18;
+      border: 1px solid #c084fc44;
+      color: #c084fc;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: #c084fc;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #f0f0f8;
+    }
+
+    h1 .accent {
+      color: #c084fc;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #8888a8;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(to right, #c084fc, transparent);
+      margin: 0 auto 40px;
+      border-radius: 2px;
+    }
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #c084fc;
+      color: white;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 12px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .contact:hover {
+      background: #a855f7;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 20px;
+      font-size: 0.7rem;
+      color: #44445a;
+    }
+  </style>
 </head>
-<body class="p-0 bg-white overflow-x-hidden font-inter">
+<body>
 
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
 
-  <!-- menu mobilne rozwijane -->
-  <div id="mobile-menu" class="hidden flex-col gap-4 px-6 pb-6 md:hidden">
-    <a href="#projekty" class="text-sm text-black hover:text-fuchsia-500 transition-colors">Projekty</a>
-    <a href="#o-mnie" class="text-sm text-black hover:text-fuchsia-500 transition-colors">O mnie</a>
-    <a href="#kontakt" class="text-sm text-black hover:text-fuchsia-500 transition-colors">Kontakt</a>
+  <div class="card">
+
+    <div class="logo"><span>M</span>ieszek.dev</div>
+
+    <div class="badge">
+      <div class="dot"></div>
+      W przebudowie
+    </div>
+
+    <h1>Strona jest<br><span class="accent">odświeżana</span></h1>
+
+    <div class="divider"></div>
+
+    <p>Pracuję nad nową wersją strony.<br>Wróć wkrótce — będzie lepiej niż kiedykolwiek.</p>
+
+    <a href="mailto:mieszkonowacki2@gmail.com" class="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" width="16" height="16">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+      </svg>
+      Napisz do mnie
+    </a>
+
   </div>
 
-  <!-- Hero -->
-   <main>
-    <section class="relative flex flex-col md:flex-row items-center px-6 py-12 md:px-20 md:py-10 w-full min-h-[80vh] gap-12 overflow-hidden">
+  <p class="footer">© 2026 Mieszek.dev</p>
 
-      <!-- kulki w tle -->
-      <div class="hidden md:block z-0 absolute bottom-[100px] left-[-100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
-      <div class="hidden md:block z-0 absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
-
-      <!-- lewy -->
-      <div class="w-full md:flex-1 flex flex-col items-start text-left">
-        
-        <h1 class="fade-up text-4xl md:text-5xl font-semibold leading-tight">
-          Tworzę nowoczesne<br>
-          strony <span class="text-fuchsia-400 text-5xl md:text-6xl">WWW</span>
-        </h1>
-
-        <p class="fade-up my-5 text-gray-500 text-sm leading-relaxed max-w-md">
-          Tworzę strony internetowe dla firm z całej Polski, które są responsywne, nowoczesne i dobrze zoptymalizowane pod kątem SEO.
-        </p>
-
-        <div class="fade-up flex gap-4 w-full justify-start">
-          <button aria-label="Zobacz projekty" class="bg-fuchsia-400 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors">
-            Projekty
-          </button>
-
-          <button aria-label="Skontaktuj się" class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
-            Kontakt
-          </button>
-        </div>
-
-      </div>
-
-      <!-- prawy -->
-      <div class="w-full md:flex-1 flex items-center justify-center md:justify-end min-w-0 2xl:justify-center">
-        <div class="z-10 w-full max-w-[320px] md:max-w-none md:w-100 rounded-xl overflow-hidden">
-
-          <!-- pasek górny -->
-          <div class="flex items-center gap-1.5 px-3.5 py-2.5 bg-zinc-100">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-            <span class="mx-auto text-xs text-zinc-400 font-mono">index.html</span>
-          </div>
-
-          <!-- paski kodu -->
-          <div class="bg-[#1e1e2e] p-5 flex flex-col gap-2.5" id="code-body">
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[38px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[24px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#cba6f7] w-[36px]"></div>
-              <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[28px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[28px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#cba6f7] w-[28px]"></div>
-              <div class="h-2 rounded-full bg-[#a6e3a1] w-[72px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[28px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[32px]"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[50px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[40px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#cba6f7] w-[48px]"></div>
-              <div class="h-2 rounded-full bg-[#a6e3a1] w-[32px]"></div>
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[24px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[28px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[56px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[28px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[28px]"></div>
-              <div class="h-2 rounded-full bg-[#f38ba8] w-[44px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[30px]"></div>
-              <div class="h-2 rounded-full bg-[#cba6f7] w-[52px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[32px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[14px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="w-[28px] shrink-0"></div>
-              <div class="h-2 rounded-full bg-[#cdd6f4] w-[36px]"></div>
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[48px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[14px]"></div>
-            </div>
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-              <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
-            </div>
-            <!-- kursor -->
-            <div class="code-row flex items-center gap-2.5 opacity-0">
-              <div class="h-2 w-1.5 rounded-sm bg-[#cdd6f4] animate-[blink_1s_infinite]"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </main>
-
-  <!--Zalety-->
-
-  <!--Responsywnosc-->
-  <section class="fade-up relative py-20 px-6 md:px-20">
-    <div class="hidden md:z-0 absolute top-[300px] left-[100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
-    <div class="max-w-3xl mx-auto">
-
-      <!-- Nagłówek -->
-      <div class="flex items-center justify-center mb-4 gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-        </svg>
-        <h2 class="text-3xl font-semibold text-center">Responsywność</h2>
-      </div>
-      <p class="text-center text-gray-500 max-w-md mx-auto mb-10">
-        Ponad połowa użytkowników internetu przegląda strony na telefonie. Dlatego moje strony wyglądają dobrze na każdej wielkości ekranu.
-      </p>
-
-      <!-- Przyciski urządzeń -->
-      <div class="flex justify-center gap-3 mb-8 flex-wrap">
-        <button onclick="setDevice('mobile')" id="btn-mobile"
-          class="device-btn flex items-center gap-2 px-5 py-2.5 rounded-full border border-fuchsia-400 bg-fuchsia-50 text-fuchsia-600 text-sm font-medium transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-          </svg>
-          Mobile
-        </button>
-
-        <!-- Tablet — ukryty na małych ekranach -->
-        <button onclick="setDevice('tablet')" id="btn-tablet"
-          class="device-btn hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white text-zinc-600 text-sm font-medium transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4">
-            <rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="18" r=".8" fill="currentColor"/>
-          </svg>
-          Tablet
-        </button>
-
-        <!-- Desktop — ukryty na małych, widoczny od md -->
-        <button onclick="setDevice('desktop')" id="btn-desktop"
-          class="device-btn hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white text-zinc-600 text-sm font-medium transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4">
-            <rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>
-          </svg>
-          Desktop
-        </button>
-
-        <!-- Laptop — widoczny tylko na małych ekranach (zamiast Desktop) -->
-        <button onclick="setDevice('laptop')" id="btn-laptop"
-          class="device-btn sm:hidden flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 bg-white text-zinc-600 text-sm font-medium transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25z" />
-          </svg>
-          Laptop
-        </button>
-      </div>
-
-      <!-- Mockup -->
-      <div id="resp-window" class="mx-auto rounded-2xl border border-zinc-200 bg-white shadow-sm overflow-hidden transition-all duration-350"
-        style="width: 320px; max-width: 100%;">
-        <!-- Pasek -->
-        <div class="flex items-center gap-2 px-4 py-3 bg-zinc-50 border-b border-zinc-200">
-          <span class="w-3 h-3 rounded-full bg-red-400"></span>
-          <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-          <span class="w-3 h-3 rounded-full bg-green-400"></span>
-          <span class="ml-2 text-xs text-zinc-400">twoja-strona.pl</span>
-        </div>
-        <!-- Treść -->
-        <div class="p-5">
-          <!-- Nav — widoczny tylko na desktop -->
-          <div id="resp-nav" class="hidden items-center justify-between mb-4 pb-4 border-b border-zinc-100">
-            <span class="text-sm font-semibold text-zinc-800">MojaFirma</span>
-            <div class="flex gap-4">
-              <span class="text-xs text-zinc-400">Oferta</span>
-              <span class="text-xs text-zinc-400">O nas</span>
-              <span class="text-xs text-zinc-400">Kontakt</span>
-            </div>
-          </div>
-          <!-- Hero text -->
-          <div class="mb-4">
-            <span class="inline-block text-xs px-3 py-1 rounded-full bg-fuchsia-100 text-fuchsia-600 mb-3">Przykładowy nagłówek</span>
-            <h3 class="text-base font-semibold text-zinc-800 mb-2 leading-snug">
-              Profesjonalna strona<br>dla <span class="text-fuchsia-500">Twojej firmy</span>
-            </h3>
-            <p class="text-xs text-zinc-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
-          </div>
-          <!-- Kafelki -->
-          <div id="resp-cards" class="grid gap-3" style="grid-template-columns: 1fr;">
-            <div class="rounded-xl bg-indigo-50 border border-indigo-100 p-3 flex items-center justify-between">
-              <span class="text-xs text-indigo-400">Użytkownicy</span>
-              <span class="text-sm font-semibold text-indigo-800">3 241</span>
-            </div>
-            <div class="rounded-xl bg-emerald-50 border border-emerald-100 p-3 flex items-center justify-between">
-              <span class="text-xs text-emerald-400">Wzrost</span>
-              <span class="text-sm font-semibold text-emerald-800">+18%</span>
-            </div>
-            <div class="rounded-xl bg-amber-50 border border-amber-100 p-3 flex items-center justify-between">
-              <span class="text-xs text-amber-400">Sesje</span>
-              <span class="text-sm font-semibold text-amber-800">9 870</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--styl-->
-  <section class="fade-up relative py-16 px-6 md:px-20 py-20">
-    <div class="hidden lg:block z-0 absolute top-[200px] right-[100px] w-[500px] h-[500px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
- 
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
- 
-      <!-- lewo: okienko -->
-      <div class="w-full order-last md:w-1/2">
-        <div id="stylWindow" class="relative z-10 rounded-2xl border border-zinc-200 bg-white shadow-sm overflow-hidden transition-all duration-300">
- 
-          <!-- Pasek tytułowy -->
-          <div id="stylBar" class="flex items-center gap-2 px-4 py-3 bg-zinc-50 border-b border-zinc-200 transition-all duration-300">
-            <span class="w-3 h-3 rounded-full bg-red-400"></span>
-            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-            <span class="w-3 h-3 rounded-full bg-green-400"></span>
-            <span id="stylBarTitle" class="ml-2 text-xs text-zinc-400 select-none">twoja-strona.pl</span>
-          </div>
- 
-          <!-- Treść -->
-          <div id="stylContent" class="p-6 transition-all duration-300">
- 
-            <!-- Nav -->
-            <div class="flex items-center justify-between mb-5 pb-4 border-b border-zinc-100" id="stylNavBorder">
-              <span id="stylLogo" class="text-sm font-bold text-zinc-800">MojaFirma</span>
-              <div class="flex gap-3">
-                <span id="stylNav1" class="text-xs text-zinc-400">Oferta</span>
-                <span id="stylNav2" class="text-xs text-zinc-400">O nas</span>
-                <span id="stylNav3" class="text-xs text-zinc-400">Kontakt</span>
-              </div>
-            </div>
- 
-            <!-- Hero -->
-            <div class="mb-5">
-              <div id="stylTag" class="inline-block text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 mb-3">Witaj na stronie</div>
-              <h3 id="stylH" class="text-lg font-semibold text-zinc-800 mb-2 leading-snug">Profesjonalne usługi<br>dla Twojej
-                <span id="stylSpan" class="">firmy</span>
-              </h3>
-              <p id="stylP" class="text-xs text-zinc-400 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-            </div>
- 
-            <!-- Button -->
-            <div id="stylBtn" class="inline-block px-4 py-2 rounded-lg bg-zinc-800 text-white text-xs font-medium transition-all duration-300">
-              Dowiedz się więcej
-            </div>
- 
-          </div>
-        </div>
-      </div>
- 
-      <!-- prawo: tekst + badge'e -->
-      <div class="w-full md:w-1/2 text-center md:text-left ">
- 
-        <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-fuchsia-500">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
-          </svg>
-          <h2 class="text-3xl font-semibold">Styl</h2>
-        </div>
- 
-        <p class="text-gray-500 mb-4">
-          Każda strona, którą tworzę, jest unikalna i dopasowana do charakteru firmy oraz oczekiwań klienta.
-        </p>
-        <p class="text-gray-400 text-sm mb-8">Kliknij styl, żeby zobaczyć jak zmienia się wygląd strony.</p>
- 
-        <!-- Badge'e -->
-        <div class="flex flex-wrap gap-3 items-center justify-center md:justify-start">
- 
-          <button onclick="setStyle('nowoczesny')" id="btn-nowoczesny" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-fuchsia-400 bg-white shadow-sm transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-            </svg>
-            <span class="text-xs md:text-sm font-medium text-zinc-700">Nowoczesny</span>
-          </button>
- 
-          <button onclick="setStyle('stylowy')" id="btn-stylowy" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-zinc-200 bg-white shadow-sm transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
-            </svg>
-            <span class="text-xs md:text-sm font-medium text-zinc-700">Stylowy</span>
-          </button>
- 
-          <button onclick="setStyle('profesjonalny')" id="btn-profesjonalny" class="style-btn flex items-center gap-1.5 px-3 py-2 md:px-5 md:py-3 rounded-full border border-zinc-200 bg-white shadow-sm transition-all duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-fuchsia-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0" />
-            </svg>
-            <span class="text-xs md:text-sm font-medium text-zinc-700">Profesjonalny</span>
-          </button>
- 
-        </div>
-      </div>
- 
-    </div>
-  </section>
-
-  <!--Szybkosc i optymalizacja-->
-  <section class="fade-up relative py-16 px-6 md:px-20">
-    <div class="z-0 absolute top-[100px] right-[100px] w-[400px] h-[400px] rounded-full bg-green-200 opacity-20 blur-3xl pointer-events-none"></div>
-
-    <div class="max-w-3xl mx-auto">
-
-      <div class=" mb-4 gap-2">
- 
-      <div class="flex items-center justify-center gap-2 mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-fuchsia-500">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-        </svg>
-        <h2 class="text-3xl font-semibold">Szybkość</h2>
-      </div>
-
-      <p class="text-center text-gray-500 max-w-md mx-auto mb-10">
-        Strony które tworzę osiągają najwyższe wyniki w Google PageSpeed Insights — co przekłada się na lepsze pozycje w wyszukiwarce i szybsze ładowanie dla użytkowników.
-      </p>
-
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
-
-        <div class="flex flex-col items-center gap-3">
-          <div style="position:relative;width:96px;height:96px;">
-            <svg width="96" height="96" style="transform:rotate(-90deg)" viewBox="0 0 36 36">
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e4e4e7" stroke-width="2.5"/>
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="100 100" stroke-linecap="round"/>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-              <span class="text-2xl font-bold text-green-500">100</span>
-            </div>
-          </div>
-          <p class="text-sm text-zinc-500 text-center">Wydajność</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-3">
-          <div style="position:relative;width:96px;height:96px;">
-            <svg width="96" height="96" style="transform:rotate(-90deg)" viewBox="0 0 36 36">
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e4e4e7" stroke-width="2.5"/>
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="91 100" stroke-linecap="round"/>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-              <span class="text-2xl font-bold text-green-500">91</span>
-            </div>
-          </div>
-          <p class="text-sm text-zinc-500 text-center">Ułatwienia dostępu</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-3">
-          <div style="position:relative;width:96px;height:96px;">
-            <svg width="96" height="96" style="transform:rotate(-90deg)" viewBox="0 0 36 36">
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e4e4e7" stroke-width="2.5"/>
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="96 100" stroke-linecap="round"/>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-              <span class="text-2xl font-bold text-green-500">96</span>
-            </div>
-          </div>
-          <p class="text-sm text-zinc-500 text-center">Sprawdzone metody</p>
-        </div>
-
-        <div class="flex flex-col items-center gap-3">
-          <div style="position:relative;width:96px;height:96px;">
-            <svg width="96" height="96" style="transform:rotate(-90deg)" viewBox="0 0 36 36">
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e4e4e7" stroke-width="2.5"/>
-              <circle cx="18" cy="18" r="15.9" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-dasharray="100 100" stroke-linecap="round"/>
-            </svg>
-            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
-              <span class="text-2xl font-bold text-green-500">100</span>
-            </div>
-          </div>
-          <p class="text-sm text-zinc-500 text-center">SEO</p>
-        </div>
-
-      </div>
-
-      <p class="text-center text-xs text-zinc-400 mt-10">
-        Wyniki z <a href="https://pagespeed.web.dev/" target="_blank" class="text-fuchsia-500 hover:underline">Google PageSpeed Insights</a> dla strony
-        <div class="flex items-center justify-center gap-2">
-          <a href="https://profitax.eu" target="_blank" class="text-black hover:underline">
-            Profitax.eu
-          </a>
-        </div>
-      </p>
-
-    </div>
-  </section>
-
-
-  <!--kontakt-->
-  <section id="kontakt" class="relative py-20 px-6 md:px-20">
-    <div class="hidden z-0 absolute top-[100px] left-[100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none md:block"></div>
-
-    <div class="max-w-xl mx-auto fade-up">
-
-      <!-- Nagłówek -->
-      <div class="flex items-center justify-center gap-2 mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-fuchsia-400">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-        </svg>
-        <h2 class="text-3xl font-semibold text-center">Kontakt</h2>
-      </div>
-      <p class="text-center text-gray-500 max-w-md mx-auto mb-10">
-        Masz pytanie lub chcesz zamówić stronę?<br> 
-        Napisz do mnie!
-      </p>
-
-      <!-- Formularz -->
-      <form
-        action="https://formspree.io/f/xbdznqko"
-        method="POST"
-        class="flex flex-col gap-4 bg-white border border-zinc-100 rounded-2xl p-8 shadow-sm"
-      >
-        <div class="flex flex-col gap-1.5">
-          <label for="email" class="text-sm font-medium text-zinc-700">Twój e-mail</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="jan@przyklad.pl"
-            class="px-4 py-2.5 rounded-xl border border-zinc-200 text-sm text-zinc-800 outline-none focus:border-fuchsia-400 focus:ring-2 focus:ring-fuchsia-100 transition-all"
-          />
-        </div>
-
-        <div class="flex flex-col gap-1.5">
-          <label for="message" class="text-sm font-medium text-zinc-700">Wiadomość</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Cześć, chciałbym zamówić..."
-            class="px-4 py-2.5 rounded-xl border border-zinc-200 text-sm text-zinc-800 outline-none focus:border-fuchsia-400 focus:ring-2 focus:ring-fuchsia-100 transition-all resize-none"
-          ></textarea>
-        </div>
-
-
-
-        <button
-          type="submit"
-          class="mt-2 bg-fuchsia-400 hover:bg-fuchsia-500 transition-colors text-white font-medium text-sm py-3 rounded-full"
-        >
-          Wyślij wiadomość
-        </button>
-      </form>
-
-    </div>
-  </section>
-
-  <!--svg fal-->
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 1440 320" 
-    preserveAspectRatio="none"
-    class="hidden block w-full h-[110px] mb-[-2px]"
-  >
-    <path fill="#FAE8FF" fill-opacity="1" d="M0,96L34.3,80C68.6,64,137,32,206,37.3C274.3,43,343,85,411,112C480,139,549,149,617,133.3C685.7,117,754,75,823,64C891.4,53,960,75,1029,74.7C1097.1,75,1166,53,1234,64C1302.9,75,1371,117,1406,138.7L1440,160L1440,320L0,320Z"></path>
-  </svg>
-
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 1440 320"
-    preserveAspectRatio="none"
-    class="block w-full h-[100px] mb-[-2px]"
-  >
-  <path 
-    fill="#FAE8FF" 
-    fill-opacity="1" 
-    d="M0,192L60,170.7C120,149,240,107,360,117.3C480,128,600,192,720,202.7C840,213,960,171,1080,176C1200,181,1320,235,1380,261.3L1440,288L1440,320L0,320Z">
-  </path>
-  </svg>
-
-
-
-  <!--footer-->
-  <footer class="bg-fuchsia-100">
-
-    <div class="flex flex-col md:flex-row md:justify-between w-11/12 md:w-4/5 mx-auto gap-6 md:gap-0 py-6">
-
-      <!-- logo + github -->
-      <div class="flex flex-col items-center md:items-start gap-3">
-
-        <a class="text-black font-extrabold text-xl sm:text-2xl md:text-3xl">
-          Mieszek.dev
-        </a>
-
-        <a target="_blank" href="https://github.com/Mieszek123"
-          class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-black text-white text-xs sm:text-sm
-                  hover:bg-fuchsia-500 transition-colors duration-300">
-
-          <!-- GitHub SVG -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
-              class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-
-          Github
-        </a>
-
-      </div>
-
-      <!-- linki -->
-      <div class="flex flex-col justify-center items-center sm:flex-row  md:items-center gap-3 sm:gap-6">
-
-        <a href="#projekty" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          Projekty
-        </a>
-
-        <a href="#o-mnie" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          O mnie
-        </a>
-
-        <a href="#kontakt" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">
-          Kontakt
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="pb-4">
-      <p class="text-center text-zinc-500 text-[10px] sm:text-xs">
-        &copy; 2026 Mieszek.dev. Wszelkie prawa zastrzeżone.
-      </p>
-    </div>
-
-  </footer>
-
-
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // tylko raz
-          }
-        });
-      }, { threshold: 0.2 });
-
-      document.querySelectorAll('.fade-up').forEach(el => {
-        observer.observe(el);
-      });
-
-
-    // animacja kodu
-    const rows = document.querySelectorAll('.code-row');
-    let i = 0;
-    function next() {
-      if (i >= rows.length) return;
-      rows[i].style.opacity = '1';
-      rows[i].style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-      rows[i].style.transform = 'translateX(0)';
-      i++;
-      setTimeout(next, 180);
-    }
-    setTimeout(next, 400);
-
-    // hamburger
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const bar1 = document.getElementById('bar1');
-    const bar2 = document.getElementById('bar2');
-    const bar3 = document.getElementById('bar3');
-    let open = false;
-
-    btn.addEventListener('click', () => {
-      open = !open;
-      if (open) {
-        menu.classList.remove('hidden');
-        menu.classList.add('flex');
-        bar1.style.transform = 'translateY(8px) rotate(45deg)';
-        bar2.style.opacity = '0';
-        bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
-      } else {
-        menu.classList.add('hidden');
-        menu.classList.remove('flex');
-        bar1.style.transform = '';
-        bar2.style.opacity = '1';
-        bar3.style.transform = '';
-      }
-    });
-
-    // responsywność — przyciski urządzeń
-    const respDevices = {
-      mobile:  { width: '320px', cols: '1fr',          nav: false },
-      tablet:  { width: '540px', cols: '1fr 1fr',      nav: false },
-      desktop: { width: '720px', cols: '1fr 1fr 1fr',  nav: true  },
-      laptop:  { width: '480px', cols: '1fr 1fr',     nav: true  },
-    };
-
-    function setDevice(name) {
-      const d = respDevices[name];
-      const win = document.getElementById('resp-window');
-      const cards = document.getElementById('resp-cards');
-      const nav = document.getElementById('resp-nav');
-
-      win.style.width = d.width;
-      cards.style.gridTemplateColumns = d.cols;
-      nav.classList.toggle('hidden', !d.nav);
-      nav.classList.toggle('flex', d.nav);
-
-      document.querySelectorAll('.device-btn').forEach(b => {
-        b.classList.remove('border-fuchsia-400', 'bg-fuchsia-50', 'text-fuchsia-600');
-        b.classList.add('border-zinc-200', 'bg-white', 'text-zinc-600');
-      });
-      const active = document.getElementById('btn-' + name);
-      active.classList.remove('border-zinc-200', 'bg-white', 'text-zinc-600');
-      active.classList.add('border-fuchsia-400', 'bg-fuchsia-50', 'text-fuchsia-600');
-    }
-
-
-    // zmiana stylu mockupa
-    const styles = {
-      nowoczesny: {
-        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-zinc-900 border-zinc-700',
-        barTitle: 'ml-2 text-xs select-none text-zinc-500',
-        content: 'p-6 transition-all duration-300 bg-white',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-zinc-100',
-        logo: 'text-sm font-black tracking-tight text-zinc-900',
-        nav: 'text-xs text-zinc-400',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-fuchsia-100 text-fuchsia-600',
-        h: 'text-lg mb-2 leading-snug font-bold text-zinc-900',
-        p: 'text-xs leading-relaxed text-zinc-400',
-        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-fuchsia-600 text-white rounded-full',
-      },
-      stylowy: {
-        bar: 'font-syne flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-[#1a0a2e] border-green-900',
-        barTitle: 'ml-2 text-xs select-none text-white',
-        content: 'p-6 transition-all duration-300 bg-[#0f0720]',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-green-900',
-        logo: 'text-xs font-black tracking-widest uppercase text-green-300',
-        nav: 'text-xs text-white',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 border border-green-200 text-white',
-        h: 'font-syne text-lg mb-2 leading-snug font-bold text-white',
-        p: 'font-syne text-xs leading-relaxed text-gray-300',
-        span: 'text-green-300 text-2xl',
-        btn: 'font-syne inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-green-400 text-black rounded-xl',
-      },
-      profesjonalny: {
-        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-slate-100 border-slate-200',
-        barTitle: 'ml-2 text-xs select-none text-slate-400',
-        content: 'p-6 transition-all duration-300 bg-white',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-slate-100',
-        logo: 'text-sm font-semibold tracking-wide text-slate-800',
-        nav: 'text-xs text-slate-500',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-blue-50 text-blue-600',
-        h: 'text-lg mb-2 leading-snug font-semibold text-slate-800',
-        p: 'text-xs leading-relaxed text-slate-400',
-        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-blue-700 text-white rounded-md',
-      },
-    };
-
-    function setStyle(name) {
-      const s = styles[name];
-      document.getElementById('stylBar').className = s.bar;
-      document.getElementById('stylBarTitle').className = s.barTitle;
-      document.getElementById('stylContent').className = s.content;
-      document.getElementById('stylNavBorder').className = s.navBorder;
-      document.getElementById('stylLogo').className = s.logo;
-      ['stylNav1', 'stylNav2', 'stylNav3'].forEach(id => {
-        document.getElementById(id).className = s.nav;
-      });
-      document.getElementById('stylTag').className = s.tag;
-      document.getElementById('stylH').className = s.h;
-      document.getElementById('stylP').className = s.p;
-      document.getElementById('stylBtn').className = s.btn;
-      document.getElementById('stylSpan').className = s.span || '';
-
-      document.querySelectorAll('.style-btn').forEach(b => {
-        b.classList.remove('border-fuchsia-400');
-        b.classList.remove('bg-blue-100');
-        b.classList.add('border-zinc-200');
-      });
-      document.getElementById('btn-' + name).classList.remove('border-zinc-200');
-      document.getElementById('btn-' + name).classList.add('border-fuchsia-400');
-      document.getElementById('btn-' + name).classList.add('bg-blue-100');
-    }
-
-  </script>
-
-
-  <div class="hidden">
-    <div class="bg-blue-100 border-fuchsia-400 border-zinc-200 grid-cols-4 sm:grid-cols-4"></div>
-  </div>
 </body>
 </html>
