@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mieszek.dev</title>
+  <meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe
+   dla firm z całej Polski. Każda strona jest szybka,
+   zoptymalizowana pod SEO i dopasowana do charakteru Twojej firmy.
+   Sprawdź moje projekty i skontaktuj się ze mną!">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,7 +71,7 @@
 
       <!-- kulki w tle -->
       <div class="hidden md:block z-0 absolute bottom-[100px] left-[-100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
-      <div class="hidden md:bock z-0 absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
+      <div class="hidden md:block z-0 absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
 
       <!-- lewy -->
       <div class="w-full md:flex-1 flex flex-col items-start text-left">
@@ -82,11 +86,11 @@
         </p>
 
         <div class="fade-up flex gap-4 w-full justify-start">
-          <button class="bg-fuchsia-400 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors">
+          <button aria-label="Zobacz projekty" class="bg-fuchsia-400 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors">
             Projekty
           </button>
 
-          <button class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
+          <button aria-label="Skontaktuj się" class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
             Kontakt
           </button>
         </div>
@@ -510,8 +514,9 @@
         class="flex flex-col gap-4 bg-white border border-zinc-100 rounded-2xl p-8 shadow-sm"
       >
         <div class="flex flex-col gap-1.5">
-          <label class="text-sm font-medium text-zinc-700">Twój e-mail</label>
+          <label for="email" class="text-sm font-medium text-zinc-700">Twój e-mail</label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="jan@przyklad.pl"
@@ -520,14 +525,17 @@
         </div>
 
         <div class="flex flex-col gap-1.5">
-          <label class="text-sm font-medium text-zinc-700">Wiadomość</label>
+          <label for="message" class="text-sm font-medium text-zinc-700">Wiadomość</label>
           <textarea
+            id="message"
             name="message"
             rows="5"
             placeholder="Cześć, chciałbym zamówić..."
             class="px-4 py-2.5 rounded-xl border border-zinc-200 text-sm text-zinc-800 outline-none focus:border-fuchsia-400 focus:ring-2 focus:ring-fuchsia-100 transition-all resize-none"
           ></textarea>
         </div>
+
+
 
         <button
           type="submit"
