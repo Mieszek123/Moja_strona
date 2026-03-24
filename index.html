@@ -8,50 +8,8 @@
   <link rel="stylesheet" href="output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            syne: ['Syne', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
-          },
-        },
-      },
-    }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
-  <style>
-    /* animacja */
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(28px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* element ukryty na start */
-    .fade-up {
-      opacity: 0;
-    }
-
-    /* klasa dodawana przez JS */
-    .fade-up.show {
-      animation: fadeUp 0.65s ease forwards;
-    }
-    .font-syne {
-      font-family: 'Syne', sans-serif;
-    }
 
 
   </style>
@@ -89,7 +47,7 @@
     </div>
 
     <!-- hamburger mobile -->
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+    <button aria-label="Otwórz menu" id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
       <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar1"></span>
       <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar2"></span>
       <span class="w-6 h-0.5 bg-black transition-all duration-300" id="bar3"></span>
@@ -104,138 +62,140 @@
   </div>
 
   <!-- Hero -->
-  <section class="relative flex flex-col md:flex-row items-center px-6 py-12 md:px-20 md:py-10 w-full min-h-[80vh] gap-12 overflow-hidden">
+   <main>
+    <section class="relative flex flex-col md:flex-row items-center px-6 py-12 md:px-20 md:py-10 w-full min-h-[80vh] gap-12 overflow-hidden">
 
-    <!-- kulki w tle -->
-    <div class="hidden md:block z-0 absolute bottom-[100px] left-[-100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
-    <div class="hidden md:bock z-0 absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
+      <!-- kulki w tle -->
+      <div class="hidden md:block z-0 absolute bottom-[100px] left-[-100px] w-[500px] h-[500px] rounded-full bg-fuchsia-200 opacity-20 blur-3xl pointer-events-none"></div>
+      <div class="hidden md:bock z-0 absolute bottom-[100px] right-[70px] w-[400px] h-[400px] rounded-full bg-purple-400 opacity-20 blur-3xl pointer-events-none"></div>
 
-    <!-- lewy -->
-    <div class="w-full md:flex-1 flex flex-col items-start text-left">
-      
-      <h1 class="fade-up text-4xl md:text-5xl font-semibold leading-tight">
-        Tworzę nowoczesne<br>
-        strony <span class="text-fuchsia-400 text-5xl md:text-6xl">WWW</span>
-      </h1>
+      <!-- lewy -->
+      <div class="w-full md:flex-1 flex flex-col items-start text-left">
+        
+        <h1 class="fade-up text-4xl md:text-5xl font-semibold leading-tight">
+          Tworzę nowoczesne<br>
+          strony <span class="text-fuchsia-400 text-5xl md:text-6xl">WWW</span>
+        </h1>
 
-      <p class="fade-up my-5 text-gray-500 text-sm leading-relaxed max-w-md">
-        Tworzę strony internetowe dla firm z całej Polski, które są responsywne, nowoczesne i dobrze zoptymalizowane pod kątem SEO.
-      </p>
+        <p class="fade-up my-5 text-gray-500 text-sm leading-relaxed max-w-md">
+          Tworzę strony internetowe dla firm z całej Polski, które są responsywne, nowoczesne i dobrze zoptymalizowane pod kątem SEO.
+        </p>
 
-      <div class="fade-up flex gap-4 w-full justify-start">
-        <button class="bg-fuchsia-400 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors">
-          Projekty
-        </button>
+        <div class="fade-up flex gap-4 w-full justify-start">
+          <button class="bg-fuchsia-400 px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-fuchsia-700 transition-colors">
+            Projekty
+          </button>
 
-        <button class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
-          Kontakt
-        </button>
-      </div>
-
-    </div>
-
-    <!-- prawy -->
-    <div class="w-full md:flex-1 flex items-center justify-center md:justify-end min-w-0 2xl:justify-center">
-      <div class="z-10 w-full max-w-[320px] md:max-w-none md:w-100 rounded-xl overflow-hidden">
-
-        <!-- pasek górny -->
-        <div class="flex items-center gap-1.5 px-3.5 py-2.5 bg-zinc-100">
-          <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
-          <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
-          <span class="mx-auto text-xs text-zinc-400 font-mono">index.html</span>
+          <button class="bg-black px-6 py-3 rounded-full text-white text-sm font-medium hover:bg-zinc-700 transition-colors">
+            Kontakt
+          </button>
         </div>
 
-        <!-- paski kodu -->
-        <div class="bg-[#1e1e2e] p-5 flex flex-col gap-2.5" id="code-body">
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[38px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[24px]"></div>
+      </div>
+
+      <!-- prawy -->
+      <div class="w-full md:flex-1 flex items-center justify-center md:justify-end min-w-0 2xl:justify-center">
+        <div class="z-10 w-full max-w-[320px] md:max-w-none md:w-100 rounded-xl overflow-hidden">
+
+          <!-- pasek górny -->
+          <div class="flex items-center gap-1.5 px-3.5 py-2.5 bg-zinc-100">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+            <span class="mx-auto text-xs text-zinc-400 font-mono">index.html</span>
           </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#cba6f7] w-[36px]"></div>
-            <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[28px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[28px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#cba6f7] w-[28px]"></div>
-            <div class="h-2 rounded-full bg-[#a6e3a1] w-[72px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[28px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[32px]"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[50px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[40px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#cba6f7] w-[48px]"></div>
-            <div class="h-2 rounded-full bg-[#a6e3a1] w-[32px]"></div>
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[24px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[28px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[56px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[28px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[28px]"></div>
-            <div class="h-2 rounded-full bg-[#f38ba8] w-[44px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[30px]"></div>
-            <div class="h-2 rounded-full bg-[#cba6f7] w-[52px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[32px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[14px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="w-[28px] shrink-0"></div>
-            <div class="h-2 rounded-full bg-[#cdd6f4] w-[36px]"></div>
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[48px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[14px]"></div>
-          </div>
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
-            <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
-          </div>
-          <!-- kursor -->
-          <div class="code-row flex items-center gap-2.5 opacity-0">
-            <div class="h-2 w-1.5 rounded-sm bg-[#cdd6f4] animate-[blink_1s_infinite]"></div>
+
+          <!-- paski kodu -->
+          <div class="bg-[#1e1e2e] p-5 flex flex-col gap-2.5" id="code-body">
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[38px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[24px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#cba6f7] w-[36px]"></div>
+              <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[28px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[28px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#cba6f7] w-[28px]"></div>
+              <div class="h-2 rounded-full bg-[#a6e3a1] w-[72px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[28px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[32px]"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[50px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[40px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#cba6f7] w-[48px]"></div>
+              <div class="h-2 rounded-full bg-[#a6e3a1] w-[32px]"></div>
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[24px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[28px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[56px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[20px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[28px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[28px]"></div>
+              <div class="h-2 rounded-full bg-[#f38ba8] w-[44px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[16px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[30px]"></div>
+              <div class="h-2 rounded-full bg-[#cba6f7] w-[52px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[44px]"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[32px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[22px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[14px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#a6e3a1] w-[60px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[18px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="w-[28px] shrink-0"></div>
+              <div class="h-2 rounded-full bg-[#cdd6f4] w-[36px]"></div>
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[48px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[14px]"></div>
+            </div>
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="h-2 rounded-full bg-[#89b4fa] w-[52px]"></div>
+              <div class="h-2 rounded-full bg-[#444466] w-[28px]"></div>
+            </div>
+            <!-- kursor -->
+            <div class="code-row flex items-center gap-2.5 opacity-0">
+              <div class="h-2 w-1.5 rounded-sm bg-[#cdd6f4] animate-[blink_1s_infinite]"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </section>
+    </section>
+  </main>
 
   <!--Zalety-->
 

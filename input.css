@@ -1,9 +1,15 @@
 @import "tailwindcss";
 @source inline("grid-cols-4 sm:grid-cols-4 bg-blue-100 border-fuchsia-400");
 
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
@@ -11,12 +17,15 @@
   50%       { opacity: 0; }
 }
 
-@theme {
-  --animate-fade-up: fade-up 0.5s ease forwards;
-  --font-sans: 'Inter', sans-serif;
+.fade-up {
+  opacity: 0;
 }
 
+.fade-up.show {
+  animation: fadeUp 0.65s ease forwards;
+}
 
-.hero-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #fdf4ff 100%);
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-syne: 'Syne', sans-serif;
 }
