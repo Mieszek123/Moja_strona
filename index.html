@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+  <!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/15acec59f0126f8887065e7ff97c7510/script.js"></script>
+	<!-- End cookieyes banner -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strony internetowe | Mieszek.dev</title>
@@ -651,160 +654,7 @@
   </footer>
 
 
-  <!-- Start cookieyes banner --> 
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/15acec59f0126f8887065e7ff97c7510/script.js"></script> 
-  <!-- End cookieyes banner -->
 
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // tylko raz
-          }
-        });
-      }, { threshold: 0.2 });
-
-      document.querySelectorAll('.fade-up').forEach(el => {
-        observer.observe(el);
-      });
-
-
-    // animacja kodu
-    const rows = document.querySelectorAll('.code-row');
-    let i = 0;
-    function next() {
-      if (i >= rows.length) return;
-      rows[i].style.opacity = '1';
-      rows[i].style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-      rows[i].style.transform = 'translateX(0)';
-      i++;
-      setTimeout(next, 180);
-    }
-    setTimeout(next, 400);
-
-    // hamburger
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const bar1 = document.getElementById('bar1');
-    const bar2 = document.getElementById('bar2');
-    const bar3 = document.getElementById('bar3');
-    let open = false;
-
-    btn.addEventListener('click', () => {
-      open = !open;
-      if (open) {
-        menu.classList.remove('hidden');
-        menu.classList.add('flex');
-        bar1.style.transform = 'translateY(8px) rotate(45deg)';
-        bar2.style.opacity = '0';
-        bar3.style.transform = 'translateY(-8px) rotate(-45deg)';
-      } else {
-        menu.classList.add('hidden');
-        menu.classList.remove('flex');
-        bar1.style.transform = '';
-        bar2.style.opacity = '1';
-        bar3.style.transform = '';
-      }
-    });
-
-    // responsywność — przyciski urządzeń
-    const respDevices = {
-      mobile:  { width: '320px', cols: '1fr',          nav: false },
-      tablet:  { width: '540px', cols: '1fr 1fr',      nav: false },
-      desktop: { width: '720px', cols: '1fr 1fr 1fr',  nav: true  },
-      laptop:  { width: '480px', cols: '1fr 1fr',     nav: true  },
-    };
-
-    function setDevice(name) {
-      const d = respDevices[name];
-      const win = document.getElementById('resp-window');
-      const cards = document.getElementById('resp-cards');
-      const nav = document.getElementById('resp-nav');
-
-      win.style.width = d.width;
-      cards.style.gridTemplateColumns = d.cols;
-      nav.classList.toggle('hidden', !d.nav);
-      nav.classList.toggle('flex', d.nav);
-
-      document.querySelectorAll('.device-btn').forEach(b => {
-        b.classList.remove('border-fuchsia-400', 'bg-fuchsia-50', 'text-fuchsia-600');
-        b.classList.add('border-zinc-200', 'bg-white', 'text-zinc-600');
-      });
-      const active = document.getElementById('btn-' + name);
-      active.classList.remove('border-zinc-200', 'bg-white', 'text-zinc-600');
-      active.classList.add('border-fuchsia-400', 'bg-fuchsia-50', 'text-fuchsia-600');
-    }
-
-
-    // zmiana stylu mockupa
-    const styles = {
-      nowoczesny: {
-        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-zinc-900 border-zinc-700',
-        barTitle: 'ml-2 text-xs select-none text-zinc-500',
-        content: 'p-6 transition-all duration-300 bg-white',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-zinc-100',
-        logo: 'text-sm font-black tracking-tight text-zinc-900',
-        nav: 'text-xs text-zinc-400',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-fuchsia-100 text-fuchsia-600',
-        h: 'text-lg mb-2 leading-snug font-bold text-zinc-900',
-        p: 'text-xs leading-relaxed text-zinc-400',
-        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-fuchsia-600 text-white rounded-full',
-      },
-      stylowy: {
-        bar: 'font-syne flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-[#1a0a2e] border-green-900',
-        barTitle: 'ml-2 text-xs select-none text-white',
-        content: 'p-6 transition-all duration-300 bg-[#0f0720]',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-green-900',
-        logo: 'text-xs font-black tracking-widest uppercase text-green-300',
-        nav: 'text-xs text-white',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 border border-green-200 text-white',
-        h: 'font-syne text-lg mb-2 leading-snug font-bold text-white',
-        p: 'font-syne text-xs leading-relaxed text-gray-300',
-        span: 'text-green-300 text-2xl',
-        btn: 'font-syne inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-green-400 text-black rounded-xl',
-      },
-      profesjonalny: {
-        bar: 'flex items-center gap-2 px-4 py-3 border-b transition-all duration-300 bg-slate-100 border-slate-200',
-        barTitle: 'ml-2 text-xs select-none text-slate-400',
-        content: 'p-6 transition-all duration-300 bg-white',
-        navBorder: 'flex items-center justify-between mb-5 pb-4 border-b border-slate-100',
-        logo: 'text-sm font-semibold tracking-wide text-slate-800',
-        nav: 'text-xs text-slate-500',
-        tag: 'inline-block text-xs px-3 py-1 rounded-full mb-3 bg-blue-50 text-blue-600',
-        h: 'text-lg mb-2 leading-snug font-semibold text-slate-800',
-        p: 'text-xs leading-relaxed text-slate-400',
-        btn: 'inline-block px-4 py-2 text-xs font-medium transition-all duration-300 bg-blue-700 text-white rounded-md',
-      },
-    };
-
-    function setStyle(name) {
-      const s = styles[name];
-      document.getElementById('stylBar').className = s.bar;
-      document.getElementById('stylBarTitle').className = s.barTitle;
-      document.getElementById('stylContent').className = s.content;
-      document.getElementById('stylNavBorder').className = s.navBorder;
-      document.getElementById('stylLogo').className = s.logo;
-      ['stylNav1', 'stylNav2', 'stylNav3'].forEach(id => {
-        document.getElementById(id).className = s.nav;
-      });
-      document.getElementById('stylTag').className = s.tag;
-      document.getElementById('stylH').className = s.h;
-      document.getElementById('stylP').className = s.p;
-      document.getElementById('stylBtn').className = s.btn;
-      document.getElementById('stylSpan').className = s.span || '';
-
-      document.querySelectorAll('.style-btn').forEach(b => {
-        b.classList.remove('border-fuchsia-400');
-        b.classList.remove('bg-blue-100');
-        b.classList.add('border-zinc-200');
-      });
-      document.getElementById('btn-' + name).classList.remove('border-zinc-200');
-      document.getElementById('btn-' + name).classList.add('border-fuchsia-400');
-      document.getElementById('btn-' + name).classList.add('bg-blue-100');
-    }
-
-  </script>
 
 
   <div class="hidden">
