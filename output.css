@@ -394,6 +394,12 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .h-\[64px\] {
+    height: 64px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
