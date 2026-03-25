@@ -51,6 +51,12 @@
   }
   </script>
 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
 </head>
 <body class="p-0 bg-white overflow-x-hidden font-inter">
 
@@ -248,9 +254,11 @@
         </svg>
         <h2 class="text-3xl font-semibold text-center">Responsywność</h2>
       </div>
-      <p class="text-center text-gray-500 max-w-md mx-auto mb-10">
-        Ponad połowa użytkowników internetu przegląda strony na telefonie. Dlatego moje strony wyglądają dobrze na każdej wielkości ekranu.
+      <p class="text-center text-gray-500 max-w-md mx-auto">
+        Ponad połowa użytkowników internetu przegląda strony na telefonie.
+         Dlatego moje strony wyglądają dobrze na każdej wielkości ekranu.
       </p>
+      <p class="text-center text-gray-500 max-w-md mx-auto mb-10 mt-5">Sprawdź sam:</p>
 
       <!-- Przyciski urządzeń -->
       <div class="flex justify-center gap-3 mb-8 flex-wrap">
@@ -535,7 +543,7 @@
         <h2 class="text-3xl font-semibold">Projekty</h2>
       </div>
       <p class="text-center text-gray-500 max-w-md mx-auto mb-12">
-        Kilka rzeczy które zrobiłem — od stron dla lokalnych firm po własne projekty.
+        Kilka rzeczy które zrobiłem:
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -551,7 +559,7 @@
                 <span class="mx-auto text-xs text-zinc-400 font-mono">profitax.eu</span>
               </div>
               <div class="overflow-hidden h-72">
-                <img src="profitax-ss.webp" alt="Screenshot strony Profitax" class="w-full h-72 object-cover object-top" loading="lazy">
+                <img src="profitax-ss.webp" alt="Screenshot strony Profitax" class="w-full h-72 object-cover object-top-left" loading="lazy">
               </div> 
             </div>
           </div>
@@ -587,7 +595,7 @@
                 <span class="mx-auto text-xs text-zinc-400 font-mono">flowly-training</span>
               </div>
               <div class="overflow-hidden h-72">
-                <img src="flowly-screen.webp" alt="Screenshot projektu Flowly Training" class="w-full h-72 object-cover object-top" loading="lazy">
+                <img src="flowly-screen.webp" alt="Screenshot projektu Flowly Training" class="w-full h-72 object-cover object-top-left" loading="lazy">
               </div>
             </div>
           </div>
@@ -609,6 +617,70 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
               </svg>
             </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--O mnie-->
+  <section id="o-mnie" class="fade-up relative py-20 px-6 md:px-20">
+    <div class="hidden md:block absolute top-[100px] left-[-60px] w-[400px] h-[400px] rounded-full bg-fuchsia-200 opacity-10 blur-3xl pointer-events-none"></div>
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Nagłówek -->
+      <div class="flex items-center justify-center mb-4 gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+        <h2 class="text-3xl font-semibold text-center">O mnie</h2>
+      </div>
+      <p class="text-center text-gray-500 max-w-md mx-auto mb-10">
+        Trochę o sobie, bo wypada się przedstawić.
+      </p>
+
+      <!-- Karta -->
+      <div class="rounded-2xl border border-zinc-200 bg-white p-8 flex flex-col sm:flex-row gap-7 items-start shadow-sm">
+
+        <!-- Avatar -->
+        <div class="shrink-0 w-[72px] h-[72px] rounded-full flex items-center justify-center text-2xl font-semibold text-purple-800"
+          style="background: linear-gradient(135deg, #f0abfc 0%, #a78bfa 100%);">
+          M
+        </div>
+
+        <!-- Treść -->
+        <div>
+          <h3 class="text-lg font-semibold text-zinc-800 mb-1">Mieszek</h3>
+          <p class="text-sm text-fuchsia-500 font-medium mb-4">Web developer z Leszna, uczeń ZSET</p>
+
+          <p class="text-sm text-zinc-500 leading-relaxed mb-2">
+            Hej! Nazywam się Mieszko Nowacki — buduję strony dla lokalnych firm i po prostu lubię, żeby działały jak należy.
+            Uczę się w <a href="https://zset.leszno.pl/" target="_blank" class="text-fuchsia-500 font-medium hover:underline">ZSET w Lesznie</a>
+            i na co dzień wchodzę coraz głębiej w świat frontendu. Zbieram doświadczenie oraz projekty do portfolio no i oczywiście troche pieniędzy.
+          </p>
+          <p class="text-sm text-zinc-500 leading-relaxed mb-5">
+            Poza Frontednem siedzę trochę w Pythonie, interesuję się tym co nowego w technologii i generalnie lubię, jak rzeczy są zrobione porządnie. Chodzę na siłownię i chyba tyle.
+          </p>
+
+          <!-- Link do szkoły -->
+          <a href="https://zset.leszno.pl/" target="_blank"
+            class="inline-flex items-center gap-1.5 text-xs text-fuchsia-500 border border-fuchsia-200 rounded-full px-3 py-1 hover:bg-fuchsia-50 transition-colors duration-200 mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-3.5 h-3.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+            </svg>
+            ZSET Leszno
+          </a>
+
+          <!-- Tagi -->
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">HTML &amp; CSS</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">Tailwind CSS</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">JavaScript</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">Python</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">Responsywność</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">SEO</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-zinc-100 text-zinc-500 border border-zinc-200">PageSpeed</span>
           </div>
         </div>
 
@@ -700,52 +772,61 @@
 
 
 
-  <!--footer-->
-  <footer class="bg-fuchsia-100">
-    <div class="flex flex-col md:flex-row md:justify-between w-11/12 md:w-4/5 mx-auto gap-6 md:gap-0 py-6">
+    <!--footer-->
+    <footer class="bg-fuchsia-100">
+      <div class="flex flex-col lg:flex-row lg:justify-between w-11/12 lg:w-4/5 mx-auto gap-6 lg:gap-0 py-6">
 
-      <div class="flex flex-col items-center md:items-start gap-3">
-        <a href="index.html" class="text-black font-extrabold text-xl sm:text-2xl md:text-3xl">Mieszek.dev</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mieszek123"
-          class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-black text-white text-xs sm:text-sm
-                 hover:bg-fuchsia-500 transition-colors duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor">
-            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-          </svg>
-          Github
-        </a>
+        <!-- lewa: logo + mail -->
+        <div class="flex flex-col items-center lg:items-start gap-2">
+          <div class="flex items-center gap-3">
+            <a href="index.html" class="text-black font-extrabold text-xl sm:text-2xl lg:text-3xl">Mieszek.dev</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Mieszek123"
+              class="flex items-center gap-2 px-3 py-1.5 rounded-md bg-black text-white text-xs sm:text-sm
+                    hover:bg-fuchsia-500 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              Github
+            </a>
+          </div>
+          <a href="mailto:mnowacki.kontakt@outlook.com"
+            class="text-xs sm:text-sm text-zinc-500 hover:text-fuchsia-500 transition-colors duration-300">
+            mnowacki.kontakt@outlook.com
+          </a>
+        </div>
+
+        <!-- prawa: linki -->
+        <div class="flex flex-col justify-center items-center sm:flex-row lg:items-center gap-3 sm:gap-6">
+          <a href="index.html#projekty" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+            after:absolute after:bottom-0 after:left-0
+            after:h-px after:w-0 after:bg-fuchsia-500
+            after:transition-all after:duration-300
+            hover:after:w-full">Projekty</a>
+          <a href="index.html#o-mnie" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+            after:absolute after:bottom-0 after:left-0
+            after:h-px after:w-0 after:bg-fuchsia-500
+            after:transition-all after:duration-300
+            hover:after:w-full">O mnie</a>
+          <a href="index.html#kontakt" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+            after:absolute after:bottom-0 after:left-0
+            after:h-px after:w-0 after:bg-fuchsia-500
+            after:transition-all after:duration-300
+            hover:after:w-full">Kontakt</a>
+          <a href="polityka.html" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
+            after:absolute after:bottom-0 after:left-0
+            after:h-px after:w-0 after:bg-fuchsia-500
+            after:transition-all after:duration-300
+            hover:after:w-full">Polityka prywatności</a>
+        </div>
+
       </div>
 
-      <div class="flex flex-col justify-center items-center sm:flex-row md:items-center gap-3 sm:gap-6">
-        <a href="index.html#projekty" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">Projekty</a>
-        <a href="index.html#o-mnie" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">O mnie</a>
-        <a href="index.html#kontakt" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">Kontakt</a>
-        <a href="polityka.html" class="relative text-xs sm:text-sm text-black hover:text-fuchsia-500 transition-colors duration-300
-          after:absolute after:bottom-0 after:left-0
-          after:h-px after:w-0 after:bg-fuchsia-500
-          after:transition-all after:duration-300
-          hover:after:w-full">Polityka prywatności</a>
+      <div class="pb-4">
+        <p class="text-center text-zinc-500 text-[10px] sm:text-xs">
+          &copy; 2026 Mieszek.dev. Wszelkie prawa zastrzeżone.
+        </p>
       </div>
-    </div>
-
-    <div class="pb-4">
-      <p class="text-center text-zinc-500 text-[10px] sm:text-xs">
-        &copy; 2026 Mieszek.dev. Wszelkie prawa zastrzeżone.
-      </p>
-    </div>
-  </footer>
+    </footer>
 
 
 
