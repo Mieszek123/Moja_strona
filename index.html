@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <!-- Start cookieyes banner --> 
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/15acec59f0126f8887065e7ff97c7510/script.js"></script> 
-  <!-- End cookieyes banner -->
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YDRS6JC7N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-1YDRS6JC7N');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strony internetowe | Mieszek.dev</title>
-  <meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe
-   dla firm z całej Polski. Każda strona jest szybka,
-   zoptymalizowana pod SEO i dopasowana do charakteru Twojej firmy.
-   Sprawdź moje projekty i skontaktuj się ze mną!">
+  <meta name="description" content="Tworzę nowoczesne i responsywne strony internetowe dla firm z całej Polski. Każda strona jest szybka, zoptymalizowana pod SEO i dopasowana do charakteru Twojej firmy. Sprawdź moje projekty i skontaktuj się ze mną!">
   <meta name="author" content="Mieszek.dev">
   <link rel="canonical" href="https://mieszek.dev/">
+
   <meta property="og:title" content="Mieszek.dev – Strony internetowe dla firm">
   <meta property="og:description" content="Tworzę nowoczesne, responsywne strony WWW dla firm z całej Polski.">
   <meta property="og:url" content="https://mieszek.dev/">
   <meta property="og:type" content="website">
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="output.css">
-
   <meta property="og:image" content="https://mieszek.dev/og-cover.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mieszek.dev – Strony internetowe dla firm">
   <meta name="twitter:description" content="Tworzę nowoczesne, responsywne strony WWW dla firm z całej Polski.">
   <meta name="twitter:image" content="https://mieszek.dev/og-cover.png">
+
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://cdn-cookieyes.com">
+
+  <!-- Preload głównego fonta -->
+  <link rel="preload" href="/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="output.css">
 
   <script type="application/ld+json">
   {
@@ -47,26 +39,15 @@
     "name": "Mieszek.dev",
     "url": "https://mieszek.dev",
     "description": "Tworzę nowoczesne strony internetowe dla firm z całej Polski.",
-    "areaServed": {
-      "@type": "Country",
-      "name": "PL"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": "Mieszek"
-    },
-    "sameAs": [
-      "https://github.com/Mieszek123"
-    ]
+    "areaServed": { "@type": "Country", "name": "PL" },
+    "founder": { "@type": "Person", "name": "Mieszek" },
+    "sameAs": ["https://github.com/Mieszek123"]
   }
   </script>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
-
 </head>
 <body class="p-0 bg-white overflow-x-hidden font-inter">
 
@@ -995,5 +976,19 @@
   <div class="hidden">
     <div class="bg-blue-100 border-fuchsia-400 border-zinc-200 grid-cols-4 sm:grid-cols-4"></div>
   </div>
+
+
+    <!-- CookieYes -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/15acec59f0126f8887065e7ff97c7510/script.js"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YDRS6JC7N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1YDRS6JC7N');
+  </script>
+  
 </body>
 </html>
