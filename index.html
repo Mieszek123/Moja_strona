@@ -859,6 +859,7 @@
 
     btn.addEventListener('click', () => {
       open = !open;
+      btn.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
       if (open) {
         menu.classList.remove('hidden');
         menu.classList.add('flex');
