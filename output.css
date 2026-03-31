@@ -569,9 +569,6 @@
   .flex-col {
     flex-direction: column;
   }
-  .flex-row {
-    flex-direction: row;
-  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -748,9 +745,6 @@
   .bg-fuchsia-400 {
     background-color: var(--color-fuchsia-400);
   }
-  .bg-fuchsia-500 {
-    background-color: var(--color-fuchsia-500);
-  }
   .bg-fuchsia-600 {
     background-color: var(--color-fuchsia-600);
   }
@@ -795,12 +789,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .object-left-top {
-    object-position: left top;
-  }
-  .object-top {
-    object-position: top;
   }
   .object-top-left {
     object-position: left top;
@@ -1209,13 +1197,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-fuchsia-500);
-      }
-    }
-  }
-  .hover\:bg-fuchsia-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-fuchsia-600);
       }
     }
   }
